@@ -24,11 +24,11 @@ keywords: command line interface, azure cli, azure command line, azure command l
 
 ## Authentication
 
-* TODO:
-Azure CLI supports several authentication methods. For detailed information about authenticating to Azure from the Azure CLI, see [Sign in with Azure CLI](./authenticate-azure-cli.md).
+[Sign in with Azure CLI](./authenticate-azure-cli.md)
 
 ## Command reference design
 
+* TODO:
 The Azure CLI syntax follows a simple `reference name` - `command` - `parameter` - `parameter value` pattern. For example, switching between subscriptions is often a common task. Here's the syntax.
 
 ```azurecli
