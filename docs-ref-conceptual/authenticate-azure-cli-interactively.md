@@ -8,30 +8,43 @@ ms.custom: devx-track-azurecli
 #customer intent: As an app developer, I want a simple way to log into Azure while developing a script.
 ---
 
-# Sign into Azure interactively using the Azure CLI 
+# Sign into Azure -- interactively, via -- Azure CLI 
 
-Interactive logins to Azure offer a more intuitive and flexible user experience. Interactive login
-with Azure CLI allows users to authenticate to Azure directly through the [az login](/cli/azure/reference-index#az-login)
-command, which is useful for ad-hoc management tasks and for environments that require manual
-sign-in, such as those customers with multi-factor authentication (MFA). This method simplifies
-access for script testing, learning, and on-the-fly management without needing to preconfigure
-service principals or other noninteractive authentication methods.
+* benefits
+  * user experience
+    * intuitive
+    * flexible
+* == via [az login](/cli/azure/reference-index#az-login)
+  * uses
+    * ad-hoc management tasks
+    * environments / require manual sign-in (_Example:_ customers / MFA)
+  * simplify
+    * access for script testing
+    * learning
+    * on-the-fly management / NO need to preconfigure 
+      * service principals or
+      * other noninteractive authentication methods
 
 ## Prerequisites
 
 * [Install the Azure CLI](./install-azure-cli.md)
+  * [Azure CLI v2.61.0+](./release-notes-azure-cli.md#may-21-2024)
 
 ## Interactive login
 
-To sign in interactively, use the [az login](/cli/azure/reference-index#az-login) command. Beginning
-with Azure CLI version [2.61.0](./release-notes-azure-cli.md#may-21-2024), Azure CLI uses Web Account Manager (WAM) on Windows, and a browser-based login on Linux and macOS by default.
+* done via
+  * | Windows
+    * by default, Web Account Manager (WAM)
+  * | Linux and macOS
+    * by default, browser-based login
 
-```azurecli-interactive
-az login
-```
+    ```azurecli-interactive
+    az login
+    ```
 
 ## Subscription selector
 
+* TODO:
 Beginning with Azure CLI version [2.61.0](./release-notes-azure-cli.md#may-21-2024), if you have
 access to multiple subscriptions, you're prompted to select an Azure subscription at time of login,
 as shown in the following example.
