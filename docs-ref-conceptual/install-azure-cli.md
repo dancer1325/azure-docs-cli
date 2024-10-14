@@ -10,8 +10,13 @@ keywords: azure cli, install azure cli, azure cli download, download azure cli
 
 # How to install the Azure CLI
 
-The Azure CLI is available to install in Windows, macOS and Linux environments. It can also be run in a Docker container and Azure Cloud Shell.
-
+* available to install it |
+  * environments
+    * Windows
+    * macOS
+    * LinuxIt
+  * Docker container
+  * Azure Cloud Shell
 
 ## Install
 
@@ -20,7 +25,6 @@ The Azure CLI is available to install in Windows, macOS and Linux environments. 
 * [Install on Windows](install-azure-cli-windows.md)
 * [Install on macOS](install-azure-cli-macos.md)
 * Install on Linux or Windows Subsystem for Linux (WSL) ([What is WSL?](/windows/wsl/about))
-
   * [Install on RHEL/CentOS Stream with dnf](./install-azure-cli-linux.md?pivots=dnf)
   * [Install on SLES/OpenSUSE with zypper](./install-azure-cli-linux.md?pivots=zypper)
   * [Install on Ubuntu/Debian with apt](./install-azure-cli-linux.md?pivots=apt)
@@ -28,14 +32,13 @@ The Azure CLI is available to install in Windows, macOS and Linux environments. 
   * [Install from script](./install-azure-cli-linux.md?pivots=script)
 * [Run in Docker container](run-azure-cli-docker.md)
 * [Run in Azure Cloud Shell](/azure/cloud-shell/quickstart)
-
-> [!NOTE]
-> If you're using the Azure classic deployment model, [install the Azure classic CLI](install-classic-cli.md).
+* If you're using the Azure classic deployment model -> [install the Azure classic CLI](install-classic-cli.md)
 
 ## FAQ
 
 ### Where is the Azure CLI installed?
 
+* TODO: 
 When installing the Azure CLI, you can't select an install location. In Windows, the 32-bit Azure CLI installs in `C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2` and the 64-bit in `C:\Program Files\Microsoft SDKs\Azure\CLI2`. In Linux, the Azure CLI is installed in `/opt/az/` on Ubuntu and Debian, and in `/lib64/az/` on CentOS Stream, RHEL and Azure Linux.
 
 User-specific configuration files are located in `$HOME/.azure` on macOS and Linux, and `%USERPROFILE%\.azure` on Windows. These locations are known as the `AZURE_CONFIG_DIR`.
