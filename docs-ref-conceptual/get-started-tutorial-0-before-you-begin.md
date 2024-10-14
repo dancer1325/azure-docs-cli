@@ -14,12 +14,11 @@ keywords: azure, az account, az group, az config, az init, configuration
     * [here](get-started-tutorial-0-before-you-begin.md)
     * vs PowerShell _tools_
     * Azure CLI command components
-  * TODO:
-> * 2 - [Prepare your environment for the Azure CLI](./get-started-tutorial-1-prepare-environment.md)
->   * Compare Bash and PowerShell _environments_.
->   * Set environment variables.
->   * Add a random ID to an Azure resource name.
->
+  * [Prepare your environment for the Azure CLI](./get-started-tutorial-1-prepare-environment.md)
+    * Compare Bash and PowerShell _environments_.
+    * Set environment variables.
+    * Add a random ID | Azure resource name.
+* TODO:
 > * 3 - [Compare Azure CLI syntax differences in Bash, PowerShell and Cmd](./get-started-tutorial-2-environment-syntax.md)
 >   * Understand differences in line continuation and variable usage.
 >   * Compare quoting differences and escape characters between environments.
