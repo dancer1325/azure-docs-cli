@@ -9,11 +9,14 @@ keywords: command line interface, azure cli, azure command line, azure command l
 ---
 # What is the Azure CLI?
 
-The Azure Command-Line Interface (CLI) is a cross-platform command-line tool to connect to Azure and execute administrative commands on Azure resources. It allows the execution of commands through a terminal using interactive command-line prompts or a script.
-
-For interactive use, you first launch a shell such as cmd.exe on Windows, or Bash on Linux or macOS, and then issue a command at the shell prompt. To automate repetitive tasks, you assemble the CLI commands into a shell script using the script syntax of your chosen shell, and then you execute the script.
-
-You can [install the Azure CLI](./install-azure-cli.md) locally on Linux, macOS, or Windows computers. It can also be used from a browser through the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/) or run from inside a Docker container.
+* Azure CLI
+  * == command-line tool / -- connects to -- Azure
+    * cross-platform
+    * execute administrative commands | Azure resources
+  * ways to use it
+    * [install locally the Azure CLI](./install-azure-cli.md)
+    * from a browser -- through the -- [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/)
+    * run | inside a Docker container
 
 ## Current Version
 
@@ -21,6 +24,7 @@ You can [install the Azure CLI](./install-azure-cli.md) locally on Linux, macOS,
 
 ## Authentication
 
+* TODO:
 Azure CLI supports several authentication methods. For detailed information about authenticating to Azure from the Azure CLI, see [Sign in with Azure CLI](./authenticate-azure-cli.md).
 
 ## Command reference design
