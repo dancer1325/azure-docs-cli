@@ -24,7 +24,7 @@ keywords: command line interface, azure cli, azure command line, azure command l
 
 ## Authentication
 
-[Sign in with Azure CLI](./authenticate-azure-cli.md)
+* [Sign in with Azure CLI](./authenticate-azure-cli.md)
 
 ## Command reference design
 
