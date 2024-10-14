@@ -10,17 +10,18 @@ ms.custom: devx-track-azurecli
 
 # Authenticate to Azure using Azure CLI
 
-The Azure CLI supports several authentication methods. Restrict sign-in permissions for your use case to keep your Azure resources secure.
+* goal
+  * several authentication methods / supported by Azure CLI
+  * restrict sign-in permissions
 
 ## Sign into Azure with Azure CLI
 
-There are five authentication options when working with the Azure CLI:
 
 | Authentication method | Advantage |
 |-|-|
-| [Azure Cloud Shell](/azure/cloud-shell/overview) | Azure Cloud Shell automatically logs you in and is the easiest way to get started.
-| [Sign in interactively](./authenticate-azure-cli-interactively.md) | This is a good option when learning Azure CLI commands and running the Azure CLI locally. Login through your browser with the [az login](/cli/azure/reference-index#az-login) command. Interactive login also gives you a subscription selector to automatically set your default subscription.
-| [Sign in with a managed identity](./authenticate-azure-cli-managed-identity.md) | [Managed identities](/entra/identity/managed-identities-azure-resources/overview) provide an Azure-managed identity for applications to use when connecting to resources that support Microsoft Entra authentication. Using a managed identity eliminates the need for you to manage secrets, credentials, certificates, and keys.
+| [Azure Cloud Shell](/azure/cloud-shell/overview) | logs you in </br> easiest way to get started
+| [Sign in interactively](./authenticate-azure-cli-interactively.md) | recommended one by Azure CLI -- [az login](/cli/azure/reference-index#az-login) --
+| [Sign in with a managed identity](./authenticate-azure-cli-managed-identity.md) | TODO: [Managed identities](/entra/identity/managed-identities-azure-resources/overview) provide an Azure-managed identity for applications to use when connecting to resources that support Microsoft Entra authentication. Using a managed identity eliminates the need for you to manage secrets, credentials, certificates, and keys.
 | [Sign in using an service principal](./authenticate-azure-cli-service-principal.md) | When you write scripts, using a [service principal](/entra/identity-platform/app-objects-and-service-principals) is the recommended authentication approach. You grant just the appropriate permissions needed to a service principal keeping your automation secure.
 
 ## Multi-factor authentication (MFA)
