@@ -10,12 +10,23 @@ keywords: Azure subscriptions, manage azure subscriptions, azure management grou
 
 # How to manage Azure subscriptions with the Azure CLI
 
-The Azure CLI helps you manage your Azure subscription, create management groups, and lock subscriptions.You might have multiple subscriptions within Azure. You can be part of more than one organization or your organization might divide access to certain resources across groupings. The Azure CLI supports selecting a subscription both globally and per command.
-
-For detailed information on subscriptions, billing, and cost management, see the [billing and cost management documentation](/azure/billing/).
+* Azure CLI
+  * allows
+    * helping manage your Azure subscription
+      * Reason: 🧠 possible to have SEVERAL subscriptions | Azure 🧠 
+      * create management groups
+        * each user -- could be part of -- >1 organization group
+        * allows
+          * dividing access to resources / groups
+      * lock subscriptions
+      * ways to select a subscription
+        * globally
+        * / command
+      * [billing and cost management documentation](/azure/billing/)
 
 ## Terminology
 
+* TODO:
 A _tenant_ is an instance of Microsoft Entra ID in which information about a single organization resides. A _[multi-tenant organization](/azure/active-directory/multi-tenant-organizations/overview)_ is an organization that has more than one instance of Microsoft Entra ID. A tenant has one or more _subscriptions_ and _users_.
 
 Users are those accounts that sign in to Azure to create, manage, and use resources. A user may have access to multiple _tenants_ and _subscriptions_.
