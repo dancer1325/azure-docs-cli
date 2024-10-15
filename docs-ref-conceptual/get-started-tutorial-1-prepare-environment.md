@@ -7,26 +7,35 @@ ms.service: azure-cli
 ms.custom: devx-track-azurecli
 keywords: azure, az account, az group, az config, az init, configuration
 ---
+
+* goal
+  * prepare your environment
+  * execute your first Azure CLI reference command
+
 # Prepare your environment for the Azure CLI
 
-In this tutorial step, you execute your first Azure CLI commands! This includes finding and setting your active subscription and setting default values. You also learn how to create resource groups containing a random ID to always guarantee a unique resource name.
-
-If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an [Azure free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
-
-To complete this tutorial step, you need `contributor` or higher permissions on your subscription.
+* goal
+  * finding and setting
+    * your active subscription
+    * default values
+  * how to create resource groups / contain a random ID -- to always guarantee a -- unique resource name
+* requisites
+  * if you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing) -> create an [Azure free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio)
+  * subscription / `contributor` or higher permissions 
 
 ## Install the Azure CLI
 
-Get started by first selecting your environment.
-
-* Use the Bash environment in [Azure Cloud Shell](/azure/cloud-shell/overview) by selecting the **Open Cloud Shell** button in the top right corner of each Azure CLI code block.
-
-* If you prefer to run the Azure CLI reference commands locally, [install](/cli/azure/install-azure-cli) the Azure CLI.
+* select from available environments
+  * use the Bash environment | [Azure Cloud Shell](/azure/cloud-shell/overview)
+    * == **Open Cloud Shell** button in the top right corner | each Azure CLI code block
+  * [install Azure CLI](/cli/azure/install-azure-cli)
+    * == run Azure CLI reference commands locally
 
 [!INCLUDE [include](./includes/current-version.md)]
 
 ## Sign in to Azure using the Azure CLI
 
+* TODO:
 There are several [authentication options](./authenticate-azure-cli.md) when working with the Azure CLI. The Azure CLI's default authentication method for logins uses a web browser and access token to sign in.
 
 [!INCLUDE [interactive_login](includes/interactive-login.md)]
