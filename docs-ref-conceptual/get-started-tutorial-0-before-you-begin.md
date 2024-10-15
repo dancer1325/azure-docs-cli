@@ -9,7 +9,7 @@ keywords: azure, az account, az group, az config, az init, configuration
 ---
 # Begin your Azure CLI journey
 
-* goal
+* Chapters
   * know the Azure CLI
     * [here](get-started-tutorial-0-before-you-begin.md)
     * vs PowerShell _tools_
