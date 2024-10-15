@@ -26,27 +26,45 @@ keywords: Azure subscriptions, manage azure subscriptions, azure management grou
 
 ## Terminology
 
-* TODO:
-A _tenant_ is an instance of Microsoft Entra ID in which information about a single organization resides. A _[multi-tenant organization](/azure/active-directory/multi-tenant-organizations/overview)_ is an organization that has more than one instance of Microsoft Entra ID. A tenant has one or more _subscriptions_ and _users_.
-
-Users are those accounts that sign in to Azure to create, manage, and use resources. A user may have access to multiple _tenants_ and _subscriptions_.
-
-_[Subscriptions](/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions)_ are the agreements with Microsoft to use cloud services, including Azure. Every resource is associated with a subscription. Subscriptions contain resource groups.
-
-An Azure _resource group_ is a container that holds related resources for an Azure solution. To learn how to manage resource groups within your subscription, see [How to manage Azure resource groups with the Azure CLI](manage-azure-groups-azure-cli.md)
+* _tenant_
+  * := instance of Microsoft Entra ID / contains information about 1 organization
+    * has >=1 
+      *  _subscriptions_
+      * _users_
+* _[multi-tenant organization](/azure/active-directory/multi-tenant-organizations/overview)_
+  * == organization / has >1 instance of Microsoft Entra ID
+* users
+  * == those accounts / sign in to Azure
+    * -- to --
+      * create resources
+      * manage resources
+      * use resources
+    * 1 user -- may have access to -- multiple
+      * _tenants_
+      * _subscriptions_
+* _[Subscriptions](/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions)_
+  * == agreements with Microsoft -- to use -- cloud services (as Azure)
+    * Every resource -- is associated with a -- subscription
+    * contain
+      * resource groups
+* _resource group_
+  * == container / holds related resources -- for an -- Azure solution
+  * [How to manage Azure resource groups with the Azure CLI](manage-azure-groups-azure-cli.md)
 
 ## Get the active tenant
 
-Use [az account tenant list](/cli/azure/account/tenant) or [az account show](/cli/azure/account#az-account-show) to get the active tenant ID.
-
-```azurecli-interactive
-az account tenant list
-
-az account show
-```
+* 
+    ```azurecli-interactive
+    az account tenant list
+    
+    az account show
+    ```
+    * [az account tenant list](/cli/azure/account/tenant)
+    * [az account show](/cli/azure/account#az-account-show) 
 
 ## Change the active tenant
 
+* TODO:
 To switch tenants, you have two options.
 
 - [Change the active subscription.](#change-the-active-subscription)
